@@ -47,7 +47,8 @@ let formatHtml=async(h,opt={})=>{
 
 let cvPage=async(fpRef,fpSrc,fpTar)=>{
 
-    let hTmp=fs.readFileSync(fpTmp,'utf8')
+    // let hTmp=fs.readFileSync(fpTmp,'utf8')
+    let hTmp=`{srcCont}`
 
     let hSrc=fs.readFileSync(fpSrc,'utf8')
     
@@ -164,7 +165,7 @@ let cvPage=async(fpRef,fpSrc,fpTar)=>{
     }
 
     // hSrc = await formatHtml(hSrc,{condense:true})
-
+    
     let h=hTmp.replace('{srcCont}',hSrc)
 
     fs.writeFileSync(fpTar,h,'utf8')
