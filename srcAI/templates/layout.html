@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{PAGE_TITLE}} - 謝錦 文學與生命覺醒讀書會</title>
+    <meta name="description" content="謝錦 文學與生命覺醒讀書會 - {{PAGE_TITLE}}" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            200: '#bcccdc',
+                            300: '#9fb3c8',
+                            400: '#829ab1',
+                            500: '#627d98',
+                            600: '#486581',
+                            700: '#334e68',
+                            800: '#243b53',
+                            900: '#1e3a5f',
+                        },
+                        accent: {
+                            50: '#fdf8f3',
+                            100: '#faebd7',
+                            200: '#f5d9b3',
+                            300: '#e8c496',
+                            400: '#d4a574',
+                            500: '#c4915f',
+                            600: '#a67c52',
+                            700: '#8a6642',
+                            800: '#6e5135',
+                            900: '#5a4129',
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- 自定義樣式 -->
+    <link rel="stylesheet" href="{{ROOT_PATH}}css/style.css" />
+</head>
+
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+    <!-- Header 
+         策略：使用 CSS Sticky 實現視差滾動效果
+         高度 228px，top -164px。當捲動超過 164px 時，Header 剩下底部 64px 固定在頂部。
+    -->
+    <header class="sticky top-[-164px] h-[228px] bg-primary-900 text-white shadow-lg z-50 overflow-hidden">
+        <!-- 背景圖層 -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <img src="{{ROOT_PATH}}img/bg.jpg" alt="" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary-900/95 to-primary-900/80 mix-blend-multiply">
+            </div>
+        </div>
+
+        <!-- 內容層：分離佈局 -->
+        <div class="absolute inset-0 z-10 pointer-events-none">
+            <div class="container mx-auto px-4 flex justify-between items-start h-full">
+
+                <!-- 左側：標題 (初始置中 mt-[82px]，JS 控制視差滾動) -->
+                <div id="header-title"
+                    class="relative mt-[82px] pointer-events-auto h-16 flex items-center will-change-transform">
+                    <a href="{{ROOT_PATH}}index.html" class="flex items-center space-x-4">
+                        <div>
+                            <h1 class="text-[2.4rem] font-bold leading-tight">謝錦 文學與生命覺醒讀書會</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 右側：選單 (初始置底 mt-[164px]) -->
+                <div class="sticky top-0 mt-[164px] pointer-events-auto h-16 flex items-center">
+                    <!-- 電腦版選單 -->
+                    <nav class="hidden lg:flex items-center space-x-6">
+                        {{TOP_NAV}}
+                    </nav>
+
+                    <!-- 手機版選單按鈕 -->
+                    <button onclick="openMobileMenu()"
+                        class="lg:hidden p-2 hover:bg-white/10 rounded-md transition-colors ml-4" aria-label="開啟選單">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要內容區 -->
+    <div class="flex-1 container mx-auto px-4 py-6">
+        <!-- 麵包屑導覽 -->
+        {{BREADCRUMB}}
+
+        <div class="flex flex-col lg:flex-row gap-6">
+            <!-- 主內容 -->
+            <main class="flex-1 min-w-0">
+
+                <!-- 內容卡片 -->
+                <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
+                    <div class="prose prose-slate max-w-none content-area">
+                        {{CONTENT}}
+                    </div>
+                </article>
+            </main>
+
+            <!-- 右側選單（寬版） -->
+            <aside class="hidden lg:block w-80 flex-shrink-0">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 sticky top-24">
+                    <h2 class="text-lg font-bold text-primary-900 mb-4 flex items-center">
+                        <i class="fas fa-sitemap mr-2 text-primary-600 leading-none"></i>
+                        網站導覽
+                    </h2>
+                    <div class="max-h-[calc(100vh-12rem)] overflow-y-auto">
+                        {{SIDEBAR_MENU}}
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- 右側浮動選單（窄版） -->
+    <div id="mobileMenuOverlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden" onclick="closeMobileMenu()">
+    </div>
+    <aside id="mobileMenu"
+        class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-xl z-50 transform translate-x-full transition-transform duration-300 lg:hidden">
+        <div class="flex items-center justify-between p-4 border-b border-slate-200 bg-primary-900 text-white">
+            <h2 class="text-lg font-bold flex items-center">
+                <i class="fas fa-sitemap mr-2 text-primary-200 leading-none"></i>
+                網站導覽
+            </h2>
+            <button onclick="closeMobileMenu()" class="p-2 hover:bg-primary-800 rounded-md transition-colors"
+                aria-label="關閉選單">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <div class="p-4 overflow-y-auto h-[calc(100%-4rem)]">
+            {{SIDEBAR_MENU}}
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="text-center text-sm text-primary-300">
+                <p>© 謝錦 文學與生命覺醒讀書會</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 選單互動腳本 -->
+    <script src="{{ROOT_PATH}}js/menu.js"></script>
+
+    <!-- 標題視差滾動與縮放腳本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const titleWrapper = document.getElementById('header-title');
+            if (titleWrapper) {
+                const titleText = titleWrapper.querySelector('h1');
+
+                const updateTitleStyle = () => {
+                    const scrollY = window.scrollY;
+                    const limit = 164;
+
+                    // 1. 位置視差：捲動量的一半 (0.5倍速)
+                    const delta = Math.min(scrollY, limit) * 0.5;
+                    titleWrapper.style.transform = `translateY(${delta}px)`;
+
+                    // 2. 字體縮放：從 2.4rem 縮小至 1.4rem
+                    if (titleText) {
+                        const progress = Math.min(scrollY, limit) / limit; // 0 ~ 1
+                        const startSize = 2.4;
+                        const endSize = 1.4;
+                        const currentSize = startSize - (progress * (startSize - endSize));
+                        titleText.style.fontSize = `${currentSize.toFixed(2)}rem`;
+                    }
+                };
+
+                window.addEventListener('scroll', () => {
+                    window.requestAnimationFrame(updateTitleStyle);
+                });
+
+                // 初始化
+                updateTitleStyle();
+            }
+        });
+    </script>
+</body>
+
+</html>

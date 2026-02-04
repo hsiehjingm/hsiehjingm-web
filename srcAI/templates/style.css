@@ -1,0 +1,215 @@
+/**
+ * 自定義樣式
+ */
+
+/* 內容區域樣式 */
+.content-area {
+    font-family: '微軟正黑體', 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
+    line-height: 1.8;
+}
+
+.content-area p {
+    margin-bottom: 1rem;
+}
+
+.content-area h1,
+.content-area h2,
+.content-area h3,
+.content-area h4 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1e3a5f;
+}
+
+.content-area h1 {
+    font-size: 1.75rem;
+}
+
+.content-area h2 {
+    font-size: 1.5rem;
+}
+
+.content-area h3 {
+    font-size: 1.25rem;
+}
+
+.content-area a {
+    color: #486581;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.content-area a:hover {
+    color: #243b53;
+}
+
+.content-area ul,
+.content-area ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-area ul {
+    list-style-type: disc;
+}
+
+.content-area ol {
+    list-style-type: decimal;
+}
+
+.content-area li {
+    margin-bottom: 0.5rem;
+}
+
+.content-area blockquote {
+    border-left: 4px solid #486581;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #627d98;
+    font-style: italic;
+}
+
+.content-area img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.content-area table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.content-area th,
+.content-area td {
+    border: 1px solid #bcccdc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.content-area th {
+    background-color: #f0f4f8;
+    font-weight: 600;
+}
+
+.content-area tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+/* 麵包屑樣式 */
+.breadcrumb a {
+    transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+    color: #486581;
+}
+
+/* 選單樣式 */
+.menu-root>li>div>a {
+    font-weight: 500;
+}
+
+/* Font Awesome 防抖動優化 - 預先佔位 */
+.fas,
+.fab,
+.far,
+.fa {
+    display: inline-block;
+    width: 1.25em;
+    height: 1em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* 特定 icon 微調 */
+.fa-chevron-right {
+    width: 0.75em;
+}
+
+.fa-xs {
+    font-size: 0.75em;
+}
+
+.toggle-btn {
+    transition: background-color 0.2s;
+}
+
+/* 滾動條樣式 */
+.overflow-y-auto::-webkit-scrollbar {
+    width: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* 目錄列表樣式 */
+.directory-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.directory-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    transition: all 0.2s;
+}
+
+.directory-item:hover {
+    background: #fff;
+    border-color: #486581;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.directory-item a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.directory-item i {
+    color: #334e68;
+    font-size: 1.25rem;
+}
+
+/* 響應式調整 */
+@media (max-width: 1024px) {
+    .content-area {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .content-area h1 {
+        font-size: 1.5rem;
+    }
+
+    .content-area h2 {
+        font-size: 1.25rem;
+    }
+
+    .content-area h3 {
+        font-size: 1.125rem;
+    }
+}
