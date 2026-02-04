@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>展示頁面</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: {
+        preflight: false, // 關閉 Tailwind 預設樣式重置
+      }
+    };
+  </script>
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <div class="container mx-auto px-4 py-6">
+    
+    <p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <b
+        ><span
+            style="
+                font-size: 18pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >510</span
+        ></b
+    ><b
+        ><span
+            style="
+                font-size: 18pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >抽象的理解<span> By Ing</span></span
+        ></b
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <b
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: red;
+            "
+            >1.</span
+        ></b
+    ><b
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: red;
+            "
+            >抽象的理解</span
+        ></b
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >上星期六晚上，兒子拿著物理小考考卷來找我問問題，我們針對考卷上他寫錯的幾個題目討論。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >他現在物理學的是關於直線運動的解題，遇到一個題目是物體從距離地面一定高度自由落體掉下，問前半段距離與後半段距離所花的時間比例為何？</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我問他怎麼看？他把自由落體的速度與距離公式列出來，然後就不知道怎麼做了。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我提示他前半段的初速度與後半段的初速度有何差別？他回：「可是我不知道高度是多少啊？」我回：「不知道就可以假設啊！」他又回：「可是我不知道速度是多少啊？」我問：「這些不能假設嗎？」接下來他露出很無奈的表情說：「我最討厭這種不知道實際數字的題目，要假設一些東西，我很難去想像，常常就覺得不知道怎麼想下去。」</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我愣了一下，看到自己想要說道理、指導（責問）的衝動，趕緊深呼吸。我緩緩的說：「所以你看到題目沒有提供任何實際的數字，會讓你覺得很抽象、疑問，然後讓你不知道怎麼樣往前去思考解題的下一步？」他點點頭。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我又問：「你現在學了這個直線速度運動理論，只適合在某一種特定情況，例如某一個特定高度嗎？」他想了一下說「不是」。我說：「所以你現在遇到的問題這個應用到所有的情況之下吧？所以你假設了這些變數，是不是也都只是個橋接過程，最後都會不見了吧？」他看著我，然後點點頭。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我又說：「所以你需要有實際的數字計算，會覺得比較踏實，所以對這種充滿假設未知的狀況，會比較不習慣吧？」他回：「對啊，從以前到現在，我就一直很不習慣去假設什麼變數、未知數，因為感覺摸不到。」</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我說「這樣我瞭解了你的問題與疑問所在，確實這樣會讓人覺得很抽象、很難下手，針對這種情形，當然你也可以假設一個實際的數字，然後去解題，但是風險是『這不適用於所有的問題』，題目稍為改變，答案就天差地遠。」他點點頭。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我又說「你也可以選擇慢慢的去接近、習慣它，就是中間過程假設的變數都是橋接過程。」他說好，要去試試看。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我說：「沒有關係，你慢慢去適應，你只要覺得哪裡讓你沒辦法接受，或覺得抽象無法理解，你隨時提出來，我們再來想辦法把它具體化。這樣<span>ok</span>嗎？」他說沒問題，這樣他會覺得好多了，我點點頭，微笑回他。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span style="font-size: 14pt; font-family: 標楷體; color: blue"
+            >謝錦</span
+        ></u
+    ><span style="font-size: 14pt; font-family: 標楷體"
+        >：針對對方的問題「問」，此不教之教也。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u><span style="font-size: 14pt; color: blue">Lucia</span></u
+    ><span style="font-size: 14pt; font-family: 標楷體"
+        >：不評判的教學真的要有很深的功力。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u><span style="font-size: 14pt; color: blue">Jenny</span></u
+    ><span style="font-size: 14pt; font-family: 標楷體"
+        >：這過程很值得細細體會！</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span style="font-size: 14pt; font-family: 標楷體; color: blue"
+            >芬</span
+        ></u
+    ><span style="font-size: 14pt; font-family: 標楷體"
+        >：走到對方的位置，他就收到你的心了。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"> </span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <b
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: red;
+            "
+            >2.</span
+        ></b
+    ><b
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: red;
+            "
+            >我媽是我的活菩薩</span
+        ></b
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >上星期五晚上我弟打電話給我，說我媽腰痛、肚子悶痛了兩三天，我弟跟我妹說要載她去看醫生，她說不用去、不想去；我爸也拿她也沒辦法。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >她自暴自棄的覺得，肚子悶痛有可能是膽結石復發（她在<span>30</span>年前曾經因為膽結石，後來把膽割掉了），如果真的又是膽結石，她也不想去治療了，想就順其自然。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我聽了之後，看到自己的內心是平靜無波的。當天晚上我也沒有打給我媽，也沒有任何擔心，因為我知道這是她情緒勒索的方式。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我跟我弟說：「如果真的痛到受不了，她自己也會求救或是去看醫生。所以再觀察看看吧！」隔天早上，我問跟我爸媽同住的姪女<span>Y</span>。她說我媽有吃了大姪女<span>E</span>給的胃腸藥，似乎有改善；我爸也說我媽已經騎機車去買菜了。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >當天晚上我打電話給我媽，我問：「聽說你這幾天肚子悶悶的不舒服，怎麼了嗎？」我媽說：「沒事啦！有吃藥了，就好了。」我回：「太好了！是吃壞肚子嗎？」她回不知道。我說：「如果真的不舒服，可以去看醫生，你知道吧！」
+        她說沒有那麼嚴重。我回她：「你的身體的痛，你自己可以感受，如果需要幫忙要通知我們。」她說沒有問題。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我看到我媽在遇到不舒服的時候，自暴自棄與情緒勒索的胜肽需求就特別強烈，然後一些無名的話語與念頭就會不斷的跑出來。這時候如果沒有看清楚，就被她這些負面情緒帶著走，反而滿足到她的胜肽了。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >我媽真是我這輩子最大的活菩薩！</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u><span style="font-size: 14pt; color: blue">Lucia</span></u
+    ><span style="font-size: 14pt; font-family: 標楷體"
+        >：勾子都勾不到東西。</span
+    ><span
+        style="
+            font-size: 14pt;
+            font-family: &quot;Segoe UI Emoji&quot;, sans-serif;
+        "
+        >😆</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span style="font-size: 14pt; font-family: 標楷體; color: blue"
+            >謝錦</span
+        ></u
+    ><span style="font-size: 14pt; font-family: 標楷體"
+        >：父母是人一生最大的功課。禮物收到、收好。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"> </span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <b
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: red;
+            "
+            >3.</span
+        ></b
+    ><b
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: red;
+            "
+            >堅持自以為是，雙手就要變長了</span
+        ></b
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >兒子的桌上型電腦因為不當關機造成開機軟體出了問題，所以電腦無法開機。上星期三晚上上完讀書會回到家裡，我請兒子把電腦所有的連接線都拔掉，只剩電腦主機，然後找了一個大提袋，我準備隔天早上帶去學校實驗室請助理處理一下。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >太太看見我準備了大提袋裝電腦主機，她問我：「你要徒手搬這麼重的主機去學校？」我點頭。她又說：「以我肉腳的角度，我覺得這樣太辛苦了，應該有別的做法。特別你中間有一大段路要用走的。」我不以為然的說：「沒問題啊，我就用雙手搬著走啊！」太太說：「好喔，你有力氣，你就用雙手搬吧！我沒力氣，所以以我的角度看這個做法，我不行。」我笑了笑。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >隔天一早起來，在準備早餐的過程，突然想起太太前一天晚上說的話，才發現我用我自己的觀點在看事情，但是真的是這樣嗎（徒手搬電腦主機從家裡到學校，再搬回家，不會覺得累）？</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >所以我又把電腦搬起來惦重量，覺得確實有一點重。找了半天，最後想到用菜籃車（拆掉袋子），把電腦主機綁在菜籃車空架上，就可以很方便的移動也不嫌重。所以最後用菜籃車拖著主機去學校。中間也需要上下公車，必須用手提，才發現真的還蠻重的，還好沒有被我以為（我是對的）的觀點遮住，否則真的雙手就累了。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"
+        >晚上回到家跟太太說謝謝她提出來的想法，也跟她道歉：「我也是用自己以為是的方式去看事情。」她說：「你看吧！」我猛微笑點頭！若堅持自以為是，就失去了空間與可能性，然後就累自己了。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span style="font-size: 14pt; font-family: 標楷體; color: blue"
+            >芬</span
+        ></u
+    ><span style="font-size: 14pt; font-family: 標楷體"
+        >：自以為是及自以為不是，有著極不相同的結果，果然選擇沒有對錯，結果卻有好壞。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u><span style="font-size: 14pt; color: blue">Jenny</span></u
+    ><span style="font-size: 14pt; font-family: 標楷體"
+        >：靈魂相映的互動：）</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u><span style="font-size: 14pt; color: blue">Chris</span></u
+    ><span style="font-size: 14pt; font-family: 標楷體">：實踐才有體驗啊。</span
+    ><span style="font-size: 14pt">.</span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u><span style="font-size: 14pt; color: blue">Mandy</span></u
+    ><span style="font-size: 14pt; font-family: 標楷體"
+        >：欣賞太太的不越界與尊重，空出空間讓自己調整，人果然是不能教的，要自己發現。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span style="font-size: 14pt; font-family: 標楷體; color: blue"
+            >典蔚</span
+        ></u
+    ><span style="font-size: 14pt; font-family: 標楷體"
+        >：有空間看到「我是對的」背後的代價，與真相的距離。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u><span style="font-size: 14pt; color: blue">Ivy</span></u
+    ><span style="font-size: 14pt; font-family: 標楷體">：兒子有表示嗎</span
+    ><span style="font-size: 14pt">?</span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u><span style="font-size: 14pt; color: blue">Even</span></u
+    ><span style="font-size: 14pt; font-family: 標楷體">：我可能是錯的～</span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span style="font-size: 14pt; font-family: 標楷體; color: blue"
+            >謝錦</span
+        ></u
+    ><span style="font-size: 14pt; font-family: 標楷體">：題目定得妙。</span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"> </span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt; font-family: 微軟正黑體, sans-serif"> </span>
+</p>
+<p
+    style="
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt"> </span>
+</p>
+    
+  </div>
+</body>
+</html>

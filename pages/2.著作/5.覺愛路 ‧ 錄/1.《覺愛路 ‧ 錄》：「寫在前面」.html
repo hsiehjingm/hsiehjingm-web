@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>展示頁面</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: {
+        preflight: false, // 關閉 Tailwind 預設樣式重置
+      }
+    };
+  </script>
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <div class="container mx-auto px-4 py-6">
+    
+    <p
+    align="center"
+    style="
+        margin-top: 9pt;
+        text-align: center;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <b
+        ><span
+            style="
+                font-size: 22pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >《覺愛路<span>/</span>錄》</span
+        ></b
+    >
+</p>
+<p
+    align="center"
+    style="
+        margin-top: 9pt;
+        text-align: center;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <b
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >謝錦桂毓</span
+        ></b
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <b
+        ><span
+            style="
+                font-size: 18pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: red;
+            "
+            >寫在前面</span
+        ></b
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >關係，是世界的本質，是宇宙人生的真相。人類自然的活在關係裡；每個人也必然、必須活在關係裡。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >一顆靈魂如果可以發現、珍視、欣賞、享受自己的寶藏，那是很棒的；如果一顆靈魂與另一顆靈魂相遇，彼此有了呼喚、應答，那一樣是很棒的。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >這個勝境不是天生的，是創造出來的，是人在生命旅程中經由學習、實踐並賦予生命意義的結果。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >我把這趟旅程稱為「覺愛路」，本書所寫就是這條路上的風景，所以也叫「覺愛錄」。
+    </span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >「愛」，是藉穿透人與人之間孤獨與分離的創造力，藉此達到深深的理解與接受，並無條件的積極關注、付出。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >要穿透什麼？要穿透生命陷落時遮蔽圓滿自我的防護牆，從二元回歸一元；並有能力進入另一個生命世界。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >「愛」是關乎對方的〔非物質性〕需要；「情」是關乎自己的好惡跟標準。情是天生的，不學而能；愛是學來的，學了才會有。讓自己從無明中醒過來，學會愛，穿越情〔感性〕理〔理性〕所構築的二元小我世界，就讓靈魂之間有了呼喚、應答的可能。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >「覺」，上「學」下「見」，意思是「學習看見的能力」。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >要看見什麼？要看見人的生命陷落在無明迷惘、糾葛困頓中受苦的二元處境，看見出離困境、解脫〔不是解決〕痛苦之路，並為自己出征。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >覺醒跟學愛是一件事；「覺愛」，就是做「生命覺醒」的功課，即從二元失愛的迷境中叫醒自己，走回自己本自圓滿的家園。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >覺醒，是向內探索長出視野—看見、看懂、看透、看破的眼力和內在力量。覺醒之路，不僅止於解脫了生命史中自我囚禁的痛苦，更提供了生命創造力的滋養之路。這樣，就有了能量；而能量，就是愛的發電機。愛就是能量。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >叫醒自己、做回自己，才能玩雙贏。做自己就是度自己，就是愛自己；玩雙贏就是度他人，就是愛他人。度己度人、愛己愛人才能回應「關係」，才成菩薩行。這是生命的功課。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >這是一趟由無知到有知，由無明到清明的旅程，是人生的必修課，是往內走的自我革命之路，是讓生命有所不同之路，是必須走又少有人走的路。願者為之，勇者行之，行者得之。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >《覺愛路<span>/</span>錄》，就是探索、紀錄這一路發生的風景的簡要小結。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >按上面的說明可知，本書的章節安排，從二元迷境開始，說人無明受苦最常見的一些狀況；次尋出離之路，說情路、理路的侷限，歸結到靈路—覺路才是出路；再說體驗，說覺察、覺悟的看見；最後說心路，舉例說旅途進程、姿勢、步伐、速度各不相同的風姿和風景。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >至於本書的敘述型態，雖然形式上不是之前各書大量使用的讀者在場的對話方式，但實質上讀者的主體依然是隱然在場的。我一開始就知道你不是我的觀眾，我不要自己一個人自顧自的對著空氣說話，因為你從來都在我心裡。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        > </span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >《覺愛路<span>/</span>錄》，是「接著」《做自己是最深刻的反叛》寫的，不是「照著」寫的。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >《做自己是最深刻的反叛》，是我在大學課堂三十三年的實踐中所創設的系統，是我的世界觀、生命觀和方法論在教學領域的呈現；遺貌取神，其真義可及於個人、家庭、團體、企業、領導、理政各層面的運用，也的確有人用得很好。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >《覺愛路<span>/</span>錄》，則是我基於同樣的世界觀、生命觀和方法論，在帶領讀書會三十八年後所做的小結，書中呈現的是一路風景的簡明紀錄。提供這些紀錄的人是這一路有緣相遇、相伴、相隨並攜手前行的朋友；這等於說，這本書是集體創作的結果。書中使用到的各種個人資訊都來自我帶的讀書會朋友，姓名都是筆名。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >兩本書的本質是一致的，都關乎生命的課題，但形式內容都不同：對象不同、場域不同，媒介不同，面對生命的力度、深度不同，表達形式也不同。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        > </span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >這是一本分享的書，對話的對象是跟經歷各不相同，卻要面臨避不開的生命課題和人生處境的人，尤其是那些對自己有興趣、關注自己生命的人。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 14pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: black;
+        "
+        >這是一本結緣的書，是跟對自己有興趣，願意跟自己說話，願意讓自己走上解脫之道，願意長出愛，願意重建關係的勇者對話的書。</span
+    >
+</p>
+    
+  </div>
+</body>
+</html>

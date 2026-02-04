@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>展示頁面</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: {
+        preflight: false, // 關閉 Tailwind 預設樣式重置
+      }
+    };
+  </script>
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <div class="container mx-auto px-4 py-6">
+    
+    <p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <b
+        ><span
+            style="
+                font-size: 18pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >371 開車記 By 智惠</span
+        ></b
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 16pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: blue;
+        "
+        >1.開車記</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >印象中應該是開始工作後二三個月後的時候，就用賺來的薪水報名汽車駕訓班去學開車。順利的考上鴐照後，沒有多久就大膽的嘗試開公司的手排公務車在台北大街小巷的去拜訪客戶。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >手排檔車要手腳腦協作良好，最怕一直塞車或停紅綠燈時要一直換檔，路邊停車時又怕熄火卡在路中，造成他人的不便，心情著實忐忐不安，緊張</span
+    ><span
+        style="
+            font-size: 16pt;
+            font-family: &quot;Segoe UI Emoji&quot;, sans-serif;
+        "
+        >😓</span
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >不已。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >當初有一段時間開手排車的經驗，乃至於在其他國家出差租車使用，使我更加嘗試開過各種類型不同的車款，小卡車、中卡載貨、七人座長型遊覽廂型車、……等。隨著時間流逝愈來愈上手，加上後來自排車的趨勢也帶來開車的便利性，漸漸忽略了自己開心是不是仍存在著內心深處的緊張害怕了。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >我從以前開始發現自己很在意搭乘自己開車內乘客的反應，尤其明顯的是一上車就拉車頂上的拉桿，不熟的人，我會默默地關注對方的感受反應，開車時會更加小心謹慎一點，以免造成對方的恐慌。遇到熟識的友人，我就會開玩笑的表示，「你的舉動讓我感到你不信任我的開車技術，這樣反而影響我喔，我會更加緊張焦慮啊！」</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >那天友人一上車又慣性拉了手把，我又說了自己的想法，不過我也在看；其實我沒有感到任何緊張焦慮的情緒，只是自己習慣性的在意自己在他人面前的表現，但我會很堅持友人要follow
+        up我的「想要」。過程中友人就放下手把，沿途中友人又「不自覺地」拉了手把，我的雷達系統也很快掃描到了，又出嘴提醒對方放下。後來的一段話幫助我看到自己埋在深一層的情緒。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >友人：「我只是手沒地方擺，僅僅只是一個慣性動作，跟信不信任你的開車技術無關，妳自己不要對號入座。」</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >我也覺得自己很有趣，其實對方拉手把時，我是沒什麼緊張感覺的啊！但是會有在意的是「自己一直都活在別人的目光之中，時不時要討好別人」。遇到熟識的人時，自己那個「全然自戀」的部分就是會出現，我要人家接受我的「耍賴」，我要符合我的「想要」，滿足自己的「操控」。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >週一上課時間提到的「自戀」，我遇到熟識的朋友們，就會展現自己真實情況。從小到大我很多都是自己擁有，不怎麼需要與人分享東西的經驗。雖然不是獨生女，但是家中只有一個女孩子，哥哥差我們十幾歲，弟弟也不會來使用我的玩具衣服，因為男女不同。有了這個好處，也造就了自己要「全要」的性格，沒有要到會「不開心」。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >這次我看到了被蓋在表面的「在意」、「不開心」這層情緒下的「渴望」、「想要」，我只是用自己可憐兮兮的方式來博得同情去達到自己的目標。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >好有趣的看到再深入的自己，也可以用言語文字清楚的表達。之前隱隱約約聽到內心深處的聲音真的是「我」，只是當時理性的我把自己給忽視趕跑了。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >挺有趣的發現，也讓自己有如頂上灌入了一股能量進體內，精神飽滿喜悅平和～～～</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >紫馨兒</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >自戀會依人際關係深淺，而有所分別？</span
+    ><span
+        style="font-size: 16pt; font-family: &quot;Times New Roman&quot;, serif"
+    >
+    </span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >Annie</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >紫馨兒，我會有分别吔！有的可以伸展，有的就內捲內傷。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >謝錦</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >有一段時間了，妳的覺察力上升好快，可以從當下的小動作看到自己的意念及與自己的關係，並且說得出來、能講出來。解縛發能又一章。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >Annie</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體">謝錦</span
+    ><span
+        style="font-size: 16pt; font-family: &quot;Times New Roman&quot;, serif"
+    >
+    </span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >持續在當下細節進行做生命功課中</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"> </span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 16pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: blue;
+        "
+        >2.試試「雙贏」方式</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >最近在用中藥治療，整體理療外用多年的調理，現在比較有心力體力進行多一點加速節奏的方式。其實過往的心底一直以來都是很心急要快快達到目標，這中間從「積極費力」、「沮喪挫敗」、「體力不支」、「放棄逃避」、「慢慢接受」、「順勢而為」，輾轉已經有五個年頭了。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >本來調理身體初衷並不是為自己，曾感到會有不能照顧父母終老的情況發生，因緣巧合的情況下用到整體理療的方式，朋友短短的三個月就結束，我現在仍在奮戰不懈中。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >許久前透過友人好意介紹中醫排毒，我都刻意往後拖著，因為知道自己心目中渴求要快，有了過多的期待，所以刻意練習「慢一慢」、「緩一緩」，靜待自己的心態能中性一點看待，「平常心」面對。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >前二週開始中藥調理，吃藥期間會一直排毒，就會拉肚子排便，人也會比較容易疲倦</span
+    ><span
+        style="
+            font-size: 16pt;
+            font-family: &quot;Segoe UI Emoji&quot;, sans-serif;
+        "
+        >😩</span
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >。我一直習慣要去找是否有規律的節奏，這樣才能安心安排外出行程，試了二週沒有出現定律的方式。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >這個週日晚上臨時得知要到教室上課，瞬間爆出冷汗</span
+    ><span
+        style="
+            font-size: 16pt;
+            font-family: &quot;Segoe UI Emoji&quot;, sans-serif;
+        "
+        >😓</span
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >一堆，腹痛如絞。吃中藥之後發現身體對情緒的反應更迅速的感受著。之前幾天開車時也是一有焦慮現象就馬上肚子痛了起來，腸躁症發作的症狀就會明顯增加。</span
+    ><span style="font-size: 16pt; font-family: &quot;MS Gothic&quot;">⋯⋯</span
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >情緒起伏與身體間的交互作用給我明顯的提示，更加快速覺察。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >這週日馬上協調自己要先在線上上課，要給自己緩衝。以前我不會跟人說明自己的情況，都會默默的不跟隨本心而順應外面的世界，這回試著練習開口了。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >接下來下週進教室，我又開始煩惱，憂心路途上太久會有狀況，塞車的情況不是我能控制的啊！怎麼辦呢？吃藥的時間醫生又配合著血氣運行的時辰來安排，我又完美的想要遵守（OS.心裏那個想快一點的渴望又慣性的爬出被窩）。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >這個問題我卡了幾天，又再試試早上吃藥時間的調整，看看是不是能找出一個「完美」固定的模型，可惜體內的安排運作不是機器，不隨我意啊！也想過是不是要避開一餐，我很快掉入「二元」的取捨之間，可是總覺得只能二選一，非我所願。我本來很堅持要在醫生規定的時間下服藥，之前有找到幾天的定律是吃後一個半小時就會開始排，後來又成了一吃就排，非常的苦惱啊！</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >今天突然「通」了，自己稍稍妥協一些，進了教室再吃，之後就取得大家的諒解，中間可能會出來上廁所。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >以前我都不想在所有人前公開這些事情，現在慢慢練習練習著。以前我在乎外界的眼光勝過自己內在的聲音，現在慢慢練習從愛自己開始做起，對待自己誠實～～</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >彩碧</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >很大的進步，身上少了很多毒素的阻礙，也讓神經感受力敏感很多。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >Annie</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體">彩碧，哈哈</span
+    ><span
+        style="font-size: 16pt; font-family: &quot;Times New Roman&quot;, serif"
+        >😄</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >排的很辛苦，思緒困在裡面的時間少了些。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >謝錦</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >果然症狀跟心理意識有密切關係。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >Annie</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >謝錦，是的，愈來愈能感受到這之間的關係。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >育凌</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >謝謝妳信任自己和大家</span
+    ><span
+        style="font-size: 16pt; font-family: &quot;Times New Roman&quot;, serif"
+        >❤️</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >Annie</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >育凌，是啊，開門出來。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"> </span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span
+        style="
+            font-size: 16pt;
+            font-family: 微軟正黑體, sans-serif;
+            color: blue;
+        "
+        >3.0和1之間的距離</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >週一上課的時候有短暫提到0和1之間的遊走是變化移動著，有個東西突然敲我的腦袋一下，有點通的感覺；恍然意識到有個亮光亮了起來。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >我看見我慣性導航只有0或1那個點上，偏執著一定要鎖定在那個確定的點上，不容許一丁點的其他空間，要完美的落在那個位置點，不容有灰色地帶，不是黑即是白的明確，紥紥實實的陷落入二元對立的情況下，不停著在我生命上演著「悲劇」，不能調合妥協的衝突一直在內心深處掙扎啃蝕著自己的靈魂。之前雖然有意識到也慢慢練習著調合，但終究是卡卡的。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >回顧過往的點點滴滴，我幾乎是幸運幸福的可以要到想要的，所以只要有一點點沒有要到，我便極力執著在那個點上，目光如豆般的聚焦在那一點，不知珍惜我周圍整片己有的，沒看到當下整片的美好，只顧著前方不可知的想像，當下的事實就錯過了。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >一直以來在追著事實與想像中間的距離。事實和想像是不對焦的，應該要亳無距離，我在虛幻的念頭裏繞呀繞著。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >其實0和1不是單向一直線的，如果是圓的我都是在那之中遊走的，轉個身有0，轉個身有1。我的念頭侷限拘泥了我在一條線的點對點上。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >操控，完美的慣性是去滿足心理上的匱乏，匱乏的深層是莫名的恐懼，人活著就是會有恐懼</span
+    ><span
+        style="
+            font-size: 16pt;
+            font-family: &quot;Segoe UI Emoji&quot;, sans-serif;
+        "
+        >😱</span
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"
+        >，但過往我執意要消滅它，要是0才行，而錯把生命用目標解決的方式來處理。我應練習靜靜的感受相處我身上所有的一切，而不是盡力驅趕抹除。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >橘子</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體">「轉個身有</span
+    ><span
+        style="font-size: 16pt; font-family: &quot;Times New Roman&quot;, serif"
+        >0</span
+    ><span style="font-size: 16pt; font-family: 標楷體">，轉個身有</span
+    ><span
+        style="font-size: 16pt; font-family: &quot;Times New Roman&quot;, serif"
+        >1</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >」，好傳神的境界！我也常困在這個不知轉身，或僵硬而不願轉呢。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >Annie</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >橘子，因為常常固定姿勢集中精神在某一個點上而忘掉還有其他姿勢。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >謝錦</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >這次的看見對妳至關緊要：妳發現自己一直執著在兩端</span
+    ><span
+        style="font-size: 16pt; font-family: &quot;Times New Roman&quot;, serif"
+        ><span style="margin-right: 2px">–</span
+        ><span style="margin-right: 2px">–</span>0</span
+    ><span style="font-size: 16pt; font-family: 標楷體">和</span
+    ><span
+        style="font-size: 16pt; font-family: &quot;Times New Roman&quot;, serif"
+        >1</span
+    ><span style="font-size: 16pt; font-family: 標楷體"
+        >，看到自己的思維定勢就處在「對立」的狀態中。分辨一下黑白跟陰陽的差異，可以往前走一大步。</span
+    >
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <u
+        ><span
+            style="
+                font-size: 16pt;
+                font-family: 微軟正黑體, sans-serif;
+                color: blue;
+            "
+            >Annie</span
+        ></u
+    ><span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif">：</span
+    ><span style="font-size: 16pt; font-family: 標楷體">謝錦，好的</span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"> </span>
+</p>
+<p
+    style="
+        margin-top: 9pt;
+        line-height: 18pt;
+       _layout-grid-mode: char;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 16pt; font-family: 微軟正黑體, sans-serif"> </span>
+</p>
+<p
+    style="
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    "
+>
+    <span style="font-size: 14pt"> </span>
+</p>
+    
+  </div>
+</body>
+</html>
