@@ -229,3 +229,10 @@ web/
 - 程式碼保留於 `./srcAI`，不刪除
 - 輸出網站於 `./web`
 - 所有輸出使用繁體中文
+
+## 部署資訊
+
+### GitHub Pages
+- **倉庫網址**：https://github.com/hsiehjingm/hsiehjingm-web
+- **網站網址**：https://hsiehjingm.github.io/hsiehjingm-web/
+- **部署方式**：GitHub Actions (Source: `web/` folder)

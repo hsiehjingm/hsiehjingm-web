@@ -46,8 +46,26 @@ const generateTopNav = (menuItems, rootPath) => {
  * @returns {string} 目錄頁 HTML
  */
 const generateDirectoryContent = (dirItem, rootPath) => {
-    let html = `<h1 class="text-2xl font-bold text-primary-900 mb-6">${dirItem.displayName}</h1>\n`
-    html += `<div class="directory-list">\n`
+    // 標題與控制工具列的容器
+    let html = `<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">\n`
+    html += `  <h1 class="text-2xl font-bold text-primary-900 m-0">${dirItem.displayName}</h1>\n`
+
+    // 格狀切換按鈕區
+    html += `  <div class="flex items-center space-x-2 bg-slate-100 p-1 rounded-lg" id="grid-controls-${dirItem.name}">\n`
+    html += `    <button class="btn-grid active" data-cols="1" title="單欄顯示">\n`
+    html += `      <i class="fas fa-list"></i>\n`
+    html += `    </button>\n`
+    html += `    <button class="btn-grid" data-cols="2" title="雙欄顯示">\n`
+    html += `      <i class="fas fa-th-large"></i>\n`
+    html += `    </button>\n`
+    html += `    <button class="btn-grid" data-cols="3" title="三欄顯示">\n`
+    html += `      <i class="fas fa-th"></i>\n`
+    html += `    </button>\n`
+    html += `  </div>\n`
+    html += `</div>\n`
+
+    // 目錄列表容器 (預設 1 欄)
+    html += `<div id="dir-list-${dirItem.name}" class="directory-list grid-cols-1">\n`
 
     if (dirItem.children && dirItem.children.length > 0) {
         for (const child of dirItem.children) {
@@ -70,6 +88,59 @@ const generateDirectoryContent = (dirItem, rootPath) => {
     }
 
     html += `</div>\n`
+
+    // 添加互動腳本 (每個目錄頁獨立)
+    html += `<script>\n`
+    html += `document.addEventListener('DOMContentLoaded', () => {\n`
+    html += `    const container = document.getElementById('dir-list-${dirItem.name}');\n`
+    html += `    const controls = document.getElementById('grid-controls-${dirItem.name}');\n`
+    html += `    if (!container || !controls) return;\n`
+    html += `\n`
+    html += `    const btns = controls.querySelectorAll('.btn-grid');\n`
+    html += `\n`
+    html += `    // 更新按鈕狀態與可用性\n`
+    html += `    const updateState = () => {\n`
+    html += `        const width = window.innerWidth;\n`
+    html += `        btns.forEach(btn => {\n`
+    html += `            const cols = parseInt(btn.dataset.cols);\n`
+    html += `            let disabled = false;\n`
+    html += `            // RWD 邏輯\n`
+    html += `            if (width < 640 && cols > 1) disabled = true;      // 手機: 僅 1 欄\n`
+    html += `            if (width < 1024 && cols > 2) disabled = true;     // 平板: 最多 2 欄\n`
+    html += `\n`
+    html += `            btn.disabled = disabled;\n`
+    html += `            if (disabled && btn.classList.contains('active')) {\n`
+    html += `                // 若當前選中的被禁用，自動切回 1 欄\n`
+    html += `                setColumns(1);\n`
+    html += `            }\n`
+    html += `        });\n`
+    html += `    };\n`
+    html += `\n`
+    html += `    // 設定欄位\n`
+    html += `    const setColumns = (n) => {\n`
+    html += `        // 移除所有 grid-cols-* \n`
+    html += `        container.classList.remove('grid-cols-1', 'grid-cols-2', 'grid-cols-3');\n`
+    html += `        container.classList.add(\`grid-cols-\${n}\`);\n`
+    html += `\n`
+    html += `        // 更新按鈕樣式\n`
+    html += `        btns.forEach(btn => {\n`
+    html += `            if (parseInt(btn.dataset.cols) === n) btn.classList.add('active');\n`
+    html += `            else btn.classList.remove('active');\n`
+    html += `        });\n`
+    html += `    };\n`
+    html += `\n`
+    html += `    // 綁定點擊事件\n`
+    html += `    btns.forEach(btn => {\n`
+    html += `        btn.addEventListener('click', () => {\n`
+    html += `            if (!btn.disabled) setColumns(parseInt(btn.dataset.cols));\n`
+    html += `        });\n`
+    html += `    });\n`
+    html += `\n`
+    html += `    // 綁定視窗變動\n`
+    html += `    window.addEventListener('resize', updateState);\n`
+    html += `    updateState(); // 初始化\n`
+    html += `});\n`
+    html += `</script>\n`
 
     return html
 }
@@ -126,8 +197,8 @@ const generateHomePage = (options, template) => {
     const sidebarMenu = generateMenuHtml(menuStructure, '', rootPath)
 
     // 首頁內容
-    let content = `<h1 class="text-2xl font-bold text-primary-900 mb-6">歡迎來到謝錦 文學與生命覺醒讀書會</h1>\n`
-    content += `<p class="text-lg text-slate-600 mb-8">探索文學的力量，啟發生命的覺醒</p>\n`
+    let content = `<h1 class="text-2xl font-bold text-primary-900 !mb-10">歡迎來到謝錦 文學與生命覺醒讀書會</h1>\n`
+
     content += `<div class="directory-list">\n`
 
     for (const item of menuItems) {

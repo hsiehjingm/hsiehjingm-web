@@ -121,8 +121,21 @@
                 <!-- 內容卡片 -->
                 <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
                     <div class="prose prose-slate max-w-none content-area">
-                        <h1 class="text-2xl font-bold text-primary-900 mb-6">5.體驗式教學研習與生命教育工作坊</h1>
-<div class="directory-list">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
+  <h1 class="text-2xl font-bold text-primary-900 m-0">5.體驗式教學研習與生命教育工作坊</h1>
+  <div class="flex items-center space-x-2 bg-slate-100 p-1 rounded-lg" id="grid-controls-5.體驗式教學研習與生命教育工作坊">
+    <button class="btn-grid active" data-cols="1" title="單欄顯示">
+      <i class="fas fa-list"></i>
+    </button>
+    <button class="btn-grid" data-cols="2" title="雙欄顯示">
+      <i class="fas fa-th-large"></i>
+    </button>
+    <button class="btn-grid" data-cols="3" title="三欄顯示">
+      <i class="fas fa-th"></i>
+    </button>
+  </div>
+</div>
+<div id="dir-list-5.體驗式教學研習與生命教育工作坊" class="directory-list grid-cols-1">
   <div class="directory-item">
     <a href="../../3.教學/5.體驗式教學研習與生命教育工作坊/1.簡介.html">
       <i class="fas fa-file-alt"></i>
@@ -154,6 +167,57 @@
     </a>
   </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('dir-list-5.體驗式教學研習與生命教育工作坊');
+    const controls = document.getElementById('grid-controls-5.體驗式教學研習與生命教育工作坊');
+    if (!container || !controls) return;
+
+    const btns = controls.querySelectorAll('.btn-grid');
+
+    // 更新按鈕狀態與可用性
+    const updateState = () => {
+        const width = window.innerWidth;
+        btns.forEach(btn => {
+            const cols = parseInt(btn.dataset.cols);
+            let disabled = false;
+            // RWD 邏輯
+            if (width < 640 && cols > 1) disabled = true;      // 手機: 僅 1 欄
+            if (width < 1024 && cols > 2) disabled = true;     // 平板: 最多 2 欄
+
+            btn.disabled = disabled;
+            if (disabled && btn.classList.contains('active')) {
+                // 若當前選中的被禁用，自動切回 1 欄
+                setColumns(1);
+            }
+        });
+    };
+
+    // 設定欄位
+    const setColumns = (n) => {
+        // 移除所有 grid-cols-* 
+        container.classList.remove('grid-cols-1', 'grid-cols-2', 'grid-cols-3');
+        container.classList.add(`grid-cols-${n}`);
+
+        // 更新按鈕樣式
+        btns.forEach(btn => {
+            if (parseInt(btn.dataset.cols) === n) btn.classList.add('active');
+            else btn.classList.remove('active');
+        });
+    };
+
+    // 綁定點擊事件
+    btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (!btn.disabled) setColumns(parseInt(btn.dataset.cols));
+        });
+    });
+
+    // 綁定視窗變動
+    window.addEventListener('resize', updateState);
+    updateState(); // 初始化
+});
+</script>
 
                     </div>
                 </article>
@@ -162,6 +226,27 @@
             <!-- 右側選單（寬版） -->
             <aside class="hidden lg:block w-80 flex-shrink-0">
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 sticky top-24">
+                    <!-- 聯絡資訊 -->
+                    <div class="mb-6 p-4 bg-primary-50 rounded-lg border border-primary-100">
+                        <h3 class="font-bold text-primary-900 mb-3 flex items-center">
+                            <i class="fas fa-address-card mr-2 text-primary-600"></i>
+                            聯絡資訊
+                        </h3>
+                        <div class="space-y-2 text-sm text-slate-700">
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope mt-1 mr-2 text-primary-400 w-4"></i>
+                                <a href="mailto:hsiehchin9999@gmail.com"
+                                    class="hover:text-primary-700 transition-colors break-all">hsiehchin9999@gmail.com</a>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fab fa-facebook mt-1 mr-2 text-primary-400 w-4"></i>
+                                <a href="https://www.facebook.com/people/%E8%AC%9D%E9%8C%A6%E6%96%87%E5%AD%B8%E8%88%87%E7%94%9F%E5%91%BD%E8%A6%BA%E9%86%92%E8%AE%80%E6%9B%B8%E6%9C%83/100064916497570/"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="hover:text-primary-700 transition-colors">謝錦文學與生命覺醒讀書會</a>
+                            </div>
+                        </div>
+                    </div>
+
                     <h2 class="text-lg font-bold text-primary-900 mb-4 flex items-center">
                         <i class="fas fa-sitemap mr-2 text-primary-600 leading-none"></i>
                         網站導覽
@@ -9840,6 +9925,27 @@
             </button>
         </div>
         <div class="p-4 overflow-y-auto h-[calc(100%-4rem)]">
+            <!-- 聯絡資訊 -->
+            <div class="mb-6 p-4 bg-slate-50 rounded-lg border border-slate-200">
+                <h3 class="font-bold text-slate-800 mb-3 flex items-center">
+                    <i class="fas fa-address-card mr-2 text-primary-600"></i>
+                    聯絡資訊
+                </h3>
+                <div class="space-y-3 text-sm text-slate-700">
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-primary-400 w-4 text-center"></i>
+                        <a href="mailto:hsiehchin9999@gmail.com"
+                            class="hover:text-primary-700 transition-colors">hsiehchin9999@gmail.com</a>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fab fa-facebook mt-0.5 mr-3 text-primary-400 w-4 text-center"></i>
+                        <a href="https://www.facebook.com/people/%E8%AC%9D%E9%8C%A6%E6%96%87%E5%AD%B8%E8%88%87%E7%94%9F%E5%91%BD%E8%A6%BA%E9%86%92%E8%AE%80%E6%9B%B8%E6%9C%83/100064916497570/"
+                            target="_blank" rel="noopener noreferrer"
+                            class="hover:text-primary-700 transition-colors">謝錦文學與生命覺醒讀書會</a>
+                    </div>
+                </div>
+            </div>
+
             <ul class="menu-root space-y-1">
   <li class="mb-1">
     <div class="menu-item text-slate-700 hover:bg-slate-50 hover:text-primary-700 border-l-4 border-transparent transition-colors flex items-center rounded-r-md">
