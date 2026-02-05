@@ -18,6 +18,7 @@ let cvPages=async()=>{
     let fpRela=path.resolve(fdRela,'rela.json')
     let kpRela=fs.readFileSync(fpRela,'utf8')
     kpRela=JSON.parse(kpRela)
+    // console.log('kpRela',kpRela)
 
     let vfps=w.fsTreeFolder(fdPages,null)
     // console.log('vfps',vfps)
@@ -35,16 +36,13 @@ let cvPages=async()=>{
         // console.log('fpSrc',fpSrc)
 
         let fpTar=fpSrc.replace(t,'.html')
-        console.log('fpTar',fpTar)
-
-        // if(fpTar.indexOf('429.html')>=0 ){
-        // }
-        // else{
-        //     return
-        // }
         // console.log('fpTar',fpTar)
 
         let fpRef=_.get(kpRela,fpSrc,'')
+        // console.log('fpRef',fpRef)
+
+        // console.log('fpSrc',fpSrc)
+        // console.log('fpTar',fpTar)
         // console.log('fpRef',fpRef)
 
         await cvPage(fpRef,fpSrc,fpTar)

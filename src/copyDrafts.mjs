@@ -9,19 +9,19 @@ let fdPages=`./pages`
 if(!w.fsIsFolder(fdPages)){
     w.fsCreateFolder(fdPages)
 }
-w.fsCleanFolder(fdPages)
+// w.fsCleanFolder(fdPages)
 
 let fdRela='./rela'
 if(!w.fsIsFolder(fdRela)){
     w.fsCreateFolder(fdRela)
 }
-w.fsCleanFolder(fdRela)
+// w.fsCleanFolder(fdRela)
 
 let t='D:\\- 061 -        謝錦讀書會\\16. 網站內容\\v3\\'
 
 let cvfp=(fp)=>{
     fp=fp.replace(t,'')
-    fp=w.strdelleft(fp,2)
+    // fp=w.strdelleft(fp,2)
     fp=path.resolve(fdPages,fp)
     return fp
 }

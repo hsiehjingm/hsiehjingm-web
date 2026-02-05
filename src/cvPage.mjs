@@ -68,16 +68,17 @@ let cvPage=async(fpRef,fpSrc,fpTar)=>{
         let bimg=false
         await w.pmSeries(s,async(v)=>{
             let vv=_.trim(v)
+            // console.log('vv',vv)
 
-            if(vv==='<img'){
+            if(vv.indexOf('<img')>=0){ //須支援format後樣式, 可能為[><img]
                 bimg=true
             }
-            else if(bimg && vv==='/>'){
+            else if(bimg && vv.indexOf('/>')>=0){ //須支援format後樣式, 可能為[/></span>]
                 bimg=false
             }
             else if(bimg){
-                // console.log('v',v)
-                // console.log('vv',vv)
+                // console.log('bimg v',v)
+                // console.log('bimg vv',vv)
 
                 if(w.strleft(vv,4)==='id="'){
                     v=''

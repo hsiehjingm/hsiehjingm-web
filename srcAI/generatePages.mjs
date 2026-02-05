@@ -76,12 +76,10 @@ const generateDirectoryContent = (dirItem, rootPath) => {
 
             const icon = child.isDir ? 'fa-folder' : 'fa-file-alt'
 
-            html += `  <div class="directory-item">\n`
-            html += `    <a href="${href}">\n`
-            html += `      <i class="fas ${icon}"></i>\n`
-            html += `      <span>${child.displayName}</span>\n`
-            html += `    </a>\n`
-            html += `  </div>\n`
+            html += `  <a href="${href}" class="directory-item">\n`
+            html += `    <i class="fas ${icon}"></i>\n`
+            html += `    <span>${child.displayName}</span>\n`
+            html += `  </a>\n`
         }
     } else {
         html += `  <p class="text-slate-500">此目錄暫無內容</p>\n`
@@ -207,12 +205,10 @@ const generateHomePage = (options, template) => {
             ? `${rootPath}${itemPath}/index.html`
             : `${rootPath}${itemPath.replace(/\.html$/, '')}.html`
 
-        content += `  <div class="directory-item">\n`
-        content += `    <a href="${href}">\n`
-        content += `      <i class="fas fa-book-reader"></i>\n`
-        content += `      <span>${item.displayName}</span>\n`
-        content += `    </a>\n`
-        content += `  </div>\n`
+        content += `  <a href="${href}" class="directory-item">\n`
+        content += `    <i class="fas fa-book-reader"></i>\n`
+        content += `    <span>${item.displayName}</span>\n`
+        content += `  </a>\n`
     }
 
     content += `</div>\n`

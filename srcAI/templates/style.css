@@ -37,7 +37,7 @@
 .content-area a {
     color: #486581;
     text-decoration: underline;
-    transition: color 0.2s;
+    transition: all 0.2s;
 }
 
 .content-area a:hover {
@@ -101,7 +101,7 @@
 
 /* 麵包屑樣式 */
 .breadcrumb a {
-    transition: color 0.2s;
+    transition: all 0.2s;
 }
 
 .breadcrumb a:hover {
@@ -160,7 +160,8 @@
 /* 目錄列表樣式 */
 .directory-list {
     display: grid;
-    grid-template-columns: 1fr; /* 預設 1 欄 */
+    grid-template-columns: 1fr;
+    /* 預設 1 欄 */
     gap: 1rem;
     transition: all 0.3s ease;
 }
@@ -206,16 +207,6 @@
     border-radius: 0.75rem;
     padding: 1rem;
     transition: all 0.2s;
-}
-
-.directory-item:hover {
-    background: #fff;
-    border-color: #486581;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-}
-
-.directory-item a {
     color: #1e3a5f;
     text-decoration: none;
     font-weight: 500;
@@ -223,6 +214,17 @@
     align-items: center;
     gap: 0.75rem;
 }
+
+.directory-item:hover {
+    background: #fff;
+    border-color: #486581;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    color: #1e3a5f;
+    /* Ensure color stays same on hover */
+}
+
+
 
 .directory-item i {
     color: #334e68;
