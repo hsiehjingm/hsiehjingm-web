@@ -195,7 +195,7 @@ const generateHomePage = (options, template) => {
     const sidebarMenu = generateMenuHtml(menuStructure, '', rootPath)
 
     // 首頁內容
-    let content = `<h1 class="text-2xl font-bold text-primary-900 !mb-10">歡迎來到謝錦 文學與生命覺醒讀書會</h1>\n`
+    let content = `<h1 class="text-2xl font-bold text-primary-900 !mb-10">歡迎來到 謝錦 文學與生命覺醒讀書會</h1>\n`
 
     content += `<div class="directory-list">\n`
 
